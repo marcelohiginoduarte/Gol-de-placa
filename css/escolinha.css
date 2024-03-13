@@ -3,8 +3,6 @@
     --cor-de-fundo: #304935;
     --cor-de-letra: #FFFFFF;
     --fonte-titulo: "Viga", sans-serif;
-
-
 }
 
 body{
@@ -130,9 +128,60 @@ body{
     color: var(--cor-de-letra);
     margin: 1em;
     text-align: center;
+    line-height: 1.5;
 
 }
 .valores{
     text-decoration: none;
     color: var(--cor-de-letra);
+}
+
+.ft-geral{
+    display: flex;
+    justify-content: space-around;
+    margin: 5em;
+}
+
+.ft-seicon{
+    width: 100%;
+    height: 250px;
+    
+}
+
+.imagenwhatss{
+    width: 25px;
+    height: 25px;
+}
+
+.container-endereço{
+    display: inline-block;
+}
+
+.ft-containe{
+    font-family: var(--fonte-titulo);
+    font-size: 200;
+    font-weight: 200px;
+    text-decoration: none;
+    color: var(--cor-de-letra);
+}
+
+.txt-link{
+    text-decoration: none;
+    color: var(--cor-de-letra);
+    Line-height: 2;
+}
+
+.hr{
+    height: ;
+    width: 100%;
+    border: 1px solid white;
+}
+.ft-direitos{
+    background-color: #0b1d0e;
+}
+.txt-direitos{
+    text-align: center;
+    font-family: var(--fonte-fother);
+    
+    
 }

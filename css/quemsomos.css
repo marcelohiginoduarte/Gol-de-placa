@@ -1,0 +1,114 @@
+
+:root{
+    --cor-de-fundo: #304935;
+    --cor-de-letra: #FFFFFF;
+    --fonte-titulo: "Viga", sans-serif;
+}
+
+body{
+    background: var(--cor-de-fundo);
+   
+}
+
+.cabeçalho-incial{
+    height: 16px;
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    margin: 1em;
+}
+
+.cabeçalho{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.link-cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    padding: 5px 8px;
+    color: var(--cor-de-letra);
+    font-family: var(--fonte-titulo);
+    font-size: 20px;
+
+    position: relative;
+}
+
+.texto1{
+    text-align: center;
+    color: var(--cor-de-letra);
+    font-family: var(--fonte-titulo);
+    font-size: 35px;
+    margin-top: -15em;
+
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        padding: 2em;
+    }
+
+    .titulo{
+        font-family:var(--fonte-titulo);
+        font-weight: 400;
+        font-size: 26px;
+        color: var(--cor-de-letra);
+    }
+    .intens-cabeçalho-insta:hover{
+        opacity: 1;
+        transform: translateY(-5px);
+        cursor: pointer;
+        transition:0.5s;
+    }
+    .link-cabeçalho:hover::after{
+        transform: scaleX(1);
+        transition: all 0.4s;
+    }
+    .link-cabeçalho::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 60%;
+        height: 1px;
+        background: white;
+        transform: scaleX(0);
+    }
+    .link-cabeçalho:hover{
+        color: white;
+    }
+
+    .ft-quemsomos{
+        width: 30em;
+        height: 30em;
+        border-radius: 9px;
+        border-radius: 85px 60px 109px 0px;
+        -webkit-border-radius: 85px 60px 109px 0px;
+        -moz-border-radius: 85px 60px 109px 0px;
+    }
+    .descrição{
+        text-align: center;
+        color: var(--cor-de-letra);
+        font-family: var(--fonte-titulo);
+        margin: 1.5em;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .texto2{
+        text-align: center;
+        color: var(--cor-de-letra);
+        font-family: var(--fonte-titulo);
+        margin: 1.5em;
+        font-size: 30px;
+    }
+    .hr{
+        height: ;
+        width: 100%;
+        border: 1px solid white;
+    }
+    
