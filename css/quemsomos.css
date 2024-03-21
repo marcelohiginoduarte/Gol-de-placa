@@ -111,4 +111,170 @@ body{
         width: 100%;
         border: 1px solid white;
     }
+
+    @media screen and (max-width: 940px){
+        body{
+         max-width: 940px;
+        }
+        
+         /*Cabeçalho*/
+     
+         /*Primeira parte com o video*/
+         .t1{
+             flex-direction: column;
+     
+         }
+     
+     
+         .t12{
+             display: contents;
+             flex-direction: initial;
+             height: 42em;
+             align-items: center;
+             text-align: center;
+             flex: 1;
+             flex-wrap: wrap;
+         }
+     
+         .intens-cabeçalho-insta{
+             display: none;
+         }
+     
+         .hr{
+             display: none;
+         }
+         .container-geral{
+             flex-direction: column;
+             flex-wrap: wrap;
+             
+         }
+     
+         .titulo3{
+             flex-wrap: wrap;
+         }
+     
+         .ft-direitos{
+             display: block;
+         }
+         .primeiro-container video {
+             width: 50vh;
+             height: 50em;
+             object-fit: cover;
+     
+         }
+     
+         .endress{
+             display: none;
+         }
+     
+         .container-endereço{
+             display: inline;
+             flex-wrap: wrap;
+         }
+     
+         .flex{
+             flex-direction: column;
+         }
+     
+         .container-geral{
+             display: flex;
+             flex-wrap: wrap;
+         }
+         .ft-seicon{
+             padding: 1em ;
+             height: 13em;
+             display: flex;
+             flex-direction: column;
+             flex-wrap: wrap;
+         }
+     
+         /*hamburguer*/
+     
+         .nav .menu-lines{
+             display: block;
+             position: absolute;
+             z-index: 999;
+             width: 35px;
+             height: 5px;
+             left: 430px;
+         }
+     
+     
+     
+         .nav .menu-lines span{
+             display: block;
+             width: 35px;
+             height: 5px;
+             margin-bottom: 10px;
+             background-color: #FFFFFF;
+             border-radius: 3px;
+             transition: all ease 1s;
+         }
+     
+         .botão-hamburguer{
+             position: absolute;
+             z-index: 1000;
+             width: 35px;
+             height: 35px;
+             left: 430px;
+             opacity: 0;
+             cursor: pointer;
+         }
+     
+         .nav .botão-hamburguer:checked~ ul{
+             /*background-color: red;*/
+             color: #000;
+         }
+     
+         .nav .botão-hamburguer:checked ~ .menu-lines span {
+             background-color: #232323;
+         }
+     
+         .nav .botão-hamburguer:checked ~ .menu-lines span:nth-child(1){
+             transform-origin: 0 100%;
+             transform: rotate(45deg) scaleX(1.25);
+         }
+     
+         .nav .botão-hamburguer:checked ~ .menu-lines span:nth-child(2){
+             opacity: 0;
+         }
+     
+         .nav .botão-hamburguer:checked ~ .menu-lines span:nth-child(3){
+             transform-origin: 0 0%;
+             transform: rotate(-45deg) scaleX(1.25);
+         }
+     
+         .nav ul {
+             position: absolute;
+             flex-direction: column;
+             z-index: 998;
+             left: 330;
+             top: 0;
+             width: 300px;
+             height: calc(100vh - 100px);
+             padding-top: 100px;
+             background-color: #FFFFFF;
+             color: #232323;
+             display: none;
+             transition: all ease-out 3s;
+         }
+     
+         .nav .cabeçalho li {
+             padding: 10px 30px;
+         }
+         .nav .cabeçalho a {
+             color:#000;
+         }
+     
+         .nav .botão-hamburguer:checked ~  ul{
+             display: block;
+         }
+     
+         /*FIM DO BOTÃO HAMBURGUER*/
+
+        .ft-quemsomos{
+            display: none;
+        }
+
+     }
     

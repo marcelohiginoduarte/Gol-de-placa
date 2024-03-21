@@ -4,8 +4,6 @@
     --cor-de-letra: #FFFFFF;
     --fonte-titulo: "Viga", sans-serif;
     --fonte-fother: "Raleway", sans-serif;
-
-
 }
 
 body{
@@ -17,7 +15,7 @@ body{
 }
 
 .cabeçalho-incial{
-    height: 16px;
+    height: 1em;
     width:auto;
     display: flex;
     justify-content: space-between;
@@ -30,6 +28,7 @@ body{
     text-decoration: none;
     align-items: center;
 }
+
 
 .link-cabeçalho{
     display: flex;
@@ -66,7 +65,15 @@ body{
 
 .t12{
     width: 100%;
-    height: 650px;
+    height: 41em;
+}
+
+.sap{
+    text-align: center;
+    font-family:var(--fonte-titulo);
+    font-weight: 200;
+    font-size: 17px;
+    color: var(--cor-de-letra);
 }
 
 .titulo{
@@ -78,7 +85,7 @@ body{
 
 .primeiro-container{
     width: 100%;
-    height: 800px;
+    height: 50em;
     position: relative;
     
 }
@@ -205,11 +212,11 @@ body{
 .endress{
     display: flex;
     justify-content: space-between;
-    border-radius: 8px;
+    border-radius: 0.6em;
 }
 
 .map{
-    border-radius: 30px;
+    border-radius: 2em;
 }
 .ft-geral{
     display: flex;
@@ -219,7 +226,7 @@ body{
 
 .ft-seicon{
     width: 100%;
-    height: 250px;
+    height: 15.6em;
     
 }
 
@@ -263,6 +270,179 @@ border: 2px solid white;
 .txt-direitos{
     text-align: center;
     font-family: var(--fonte-fother);
-    
-    
+}
+
+.t13{
+    width: 100%;
+    height: 41em;
+}
+
+.menu-lines{
+    display: none;
+}
+
+.botão-hamburguer{
+    display: none;
+}
+
+@media screen and (max-width: 940px){
+   body{
+    max-width: 940px;
+   }
+   
+    /*Cabeçalho*/
+
+    /*Primeira parte com o video*/
+    .t1{
+        flex-direction: column;
+
+    }
+
+
+    .t12{
+        display: contents;
+        flex-direction: initial;
+        height: 42em;
+        align-items: center;
+        text-align: center;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+
+    .intens-cabeçalho-insta{
+        display: none;
+    }
+
+    .hr{
+        display: none;
+    }
+    .container-geral{
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    .titulo3{
+        flex-wrap: wrap;
+    }
+
+    .ft-direitos{
+        display: block;
+    }
+    .primeiro-container video {
+        width: 50vh;
+        height: 50em;
+        object-fit: cover;
+
+    }
+
+    .endress{
+        display: none;
+    }
+
+    .container-endereço{
+        display: inline;
+        flex-wrap: wrap;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .container-geral{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ft-seicon{
+        padding: 1em ;
+        height: 13em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /*hamburguer*/
+
+    .nav .menu-lines{
+        display: block;
+        position: absolute;
+        z-index: 999;
+        width: 35px;
+        height: 5px;
+        left: 430px;
+    }
+
+
+
+    .nav .menu-lines span{
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin-bottom: 10px;
+        background-color: #FFFFFF;
+        border-radius: 3px;
+        transition: all ease 1s;
+    }
+
+    .botão-hamburguer{
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        width: 35px;
+        height: 35px;
+        left: 430px;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .nav .botão-hamburguer:checked~ ul{
+        /*background-color: red;*/
+        color: #000;
+    }
+
+    .nav .botão-hamburguer:checked ~ .menu-lines span {
+        background-color: #232323;
+    }
+
+    .nav .botão-hamburguer:checked ~ .menu-lines span:nth-child(1){
+        transform-origin: 0 100%;
+        transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .nav .botão-hamburguer:checked ~ .menu-lines span:nth-child(2){
+        opacity: 0;
+    }
+
+    .nav .botão-hamburguer:checked ~ .menu-lines span:nth-child(3){
+        transform-origin: 0 0%;
+        transform: rotate(-45deg) scaleX(1.25);
+    }
+
+    .nav ul {
+        position: absolute;
+        flex-direction: column;
+        z-index: 998;
+        left: 330;
+        top: 0;
+        width: 300px;
+        height: calc(100vh - 100px);
+        padding-top: 100px;
+        background-color: #FFFFFF;
+        color: #232323;
+        display: none;
+        transition: all ease-out 3s;
+    }
+
+    .nav .cabeçalho li {
+        padding: 10px 30px;
+    }
+    .nav .cabeçalho a {
+        color:#000;
+    }
+
+    .nav .botão-hamburguer:checked ~  ul{
+        display: block;
+    }
+
+    /*FIM DO BOTÃO HAMBURGUER*/
 }

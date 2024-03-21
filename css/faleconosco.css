@@ -1,17 +1,19 @@
-
 :root{
     --cor-de-fundo: #304935;
     --cor-de-letra: #FFFFFF;
     --fonte-titulo: "Viga", sans-serif;
+    --fonte-fother: "Raleway", sans-serif;
 }
 
 body{
-    background: var(--cor-de-fundo);
-   
+    background-color: var(--cor-de-fundo);
+    border: 5em;
+    width: auto;
 }
 
+/*.cabeçalho*/
 .cabeçalho-incial{
-    height: 16px;
+    height: 1em;
     width:auto;
     display: flex;
     justify-content: space-between;
@@ -34,23 +36,6 @@ body{
     color: var(--cor-de-letra);
     font-family: var(--fonte-titulo);
     font-size: 20px;
-
-    position: relative;
-}
-
-.texto1{
-    text-align: center;
-    color: var(--cor-de-letra);
-    font-family: var(--fonte-titulo);
-    font-size: 35px;
-    margin-top: -15em;
-}
-.texto2{
-    text-align: center;
-    color: var(--cor-de-letra);
-    font-family: var(--fonte-titulo);
-    margin: 1.5em;
-    font-size: 30px;
 }
 
 .link-cabeçalho:hover{
@@ -73,23 +58,31 @@ body{
     transition: all 0.4s;
 }
 
-.t12{
+.container{
+    background-color: #304935;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
     width: 100%;
-    height: 650px;
+}
+.link-cabeçalho:hover{
+    color: white;
 }
 
-.titulo{
-    font-family:var(--fonte-titulo);
-    font-weight: 400;
-    font-size: 26px;
-    color: var(--cor-de-letra);
+.link-cabeçalho::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 60%;
+    height: 1px;
+    background: white;
+    transform: scaleX(0);
 }
 
-.primeiro-container{
-    width: 100%;
-    height: 800px;
-    position: relative;
-    
+.link-cabeçalho:hover::after{
+    transform: scaleX(1);
+    transition: all 0.4s;
 }
 
 .intens-cabeçalho-insta{
@@ -104,86 +97,75 @@ body{
     transition:0.5s;
 }
 
-.container-escolinha{
-    display: flex;
-    justify-content:space-around;
-    width: 100%;
-    height: 30em;
-    padding: 1em 1em;
-}
+/*Fim do cabeçalho*/
 
-.escolinha-foto{
-    width: 30em;
-    height: 30em;
-    border-radius: 9px;
-    border-radius: 85px 60px 109px 0px;
-    -webkit-border-radius: 85px 60px 109px 0px;
-    -moz-border-radius: 85px 60px 109px 0px;
-}
 
-.descrição{
-    font-family: var(--fonte-titulo);
-    font-size: 20px;
-    font-weight: 200;
-    color: var(--cor-de-letra);
-    margin: 1em;
-    text-align: center;
-    line-height: 1.5;
-
-}
-.valores{
-    text-decoration: none;
+.titulo{
+    font-family:var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 26px;
     color: var(--cor-de-letra);
 }
 
-.ft-geral{
-    display: flex;
-    justify-content: space-around;
-    margin: 5em;
+.container{
+    background-color: #FFFFFF;
+   border: 2.5px solid white;
+   height: 32em;
+   width: 40em;
+   margin: 5em 10em 5em 28em;
 }
 
-.ft-seicon{
-    width: 100%;
-    height: 250px;
-    
+
+
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
 }
 
-.imagenwhatss{
-    width: 25px;
-    height: 25px;
-}
-
-.container-endereço{
+.form-content label{
     display: inline-block;
-}
-
-.ft-containe{
-    font-family: var(--fonte-titulo);
-    font-size: 200;
-    font-weight: 200px;
-    text-decoration: none;
-    color: var(--cor-de-letra);
-}
-
-.txt-link{
-    text-decoration: none;
-    color: var(--cor-de-letra);
-    Line-height: 2;
-}
-
-.hr{
-    height: ;
-    width: 100%;
-    border: 1px solid white;
-}
-.ft-direitos{
-    background-color: #0b1d0e;
-}
-.txt-direitos{
+    margin: 3px 0 0 0 ;
+    margin-bottom: 1px;
     text-align: center;
-    font-family: var(--fonte-fother);
-    
-    
+}
+
+.form-content input{
+    display: block;
+    width: 80%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+.form-content a {
+    position:absolute ;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-content button {
+    background-color: var(--cor-de-fundo);
+    color: #FFFFFF;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+    align-items: center;
+    margin: -6px 0 0 -6px;
+
+}
+
+.form-content.erro input {
+    border-color: #ff3b25;
+
+}
+
+.form-content.erro a {
+    color: #ff3b25;
+    visibility: visible;
+
 }
 
 @media screen and (max-width: 940px){
@@ -345,12 +327,4 @@ body{
      }
  
      /*FIM DO BOTÃO HAMBURGUER*/
-
-    .escolinha-foto{
-        display: none;
-    }
-
-    .ft-containe{
-        display: none;
-    }
  }
