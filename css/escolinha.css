@@ -186,6 +186,10 @@ body{
     
 }
 
+.botão-hamburguer{
+    display: none;
+}
+
 @media screen and (max-width: 940px){
     body{
      max-width: 940px;

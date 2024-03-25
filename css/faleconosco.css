@@ -128,14 +128,16 @@ body{
     margin: 3px 0 0 0 ;
     margin-bottom: 1px;
     text-align: center;
+    padding-left: 20px;
 }
 
 .form-content input{
     display: block;
-    width: 80%;
+    width: 500px;
     border-radius: 8px;
     padding: 8px;
     border: 2px solid #dfdfdf;
+    padding-left: 10px;
 }
 
 .form-content a {
@@ -154,7 +156,7 @@ body{
     cursor: pointer;
     align-items: center;
     margin: -6px 0 0 -6px;
-
+    align-items: center;
 }
 
 .form-content.erro input {
@@ -168,9 +170,17 @@ body{
 
 }
 
+.botão-hamburguer{
+    display: none;
+}
+
 @media screen and (max-width: 940px){
+    header{
+        width: 430px;
+    }
     body{
      max-width: 940px;
+    
     }
     
      /*Cabeçalho*/
@@ -325,6 +335,42 @@ body{
      .nav .botão-hamburguer:checked ~  ul{
          display: block;
      }
- 
      /*FIM DO BOTÃO HAMBURGUER*/
+     .container{
+        background-color: #FFFFFF;
+       border: 2.5px solid white;
+       height: 32em;
+       width: 40em;
+       margin: 1em 1em 1em 1em;
+       max-width: 90%;
+    }
+    .form-content button {
+        background-color: var(--cor-de-fundo);
+        color: #FFFFFF;
+        border-radius: 14px;
+        padding: 5px;
+        border: 0;
+        font-size: 12px;
+        cursor: pointer;
+        align-items: center;
+        margin: -6px 0 0 -6px;
+        align-items: center;
+    }
+
+    .form-content input{
+        display: block;
+        width: 80%;
+        border-radius: 8px;
+        padding: 8px;
+        border: 2px solid #dfdfdf;
+        padding-left: 10px;
+    }
+    .cabeçalho-incial{
+        height: 1em;
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1.5em;
+        margin: 1em;
+    }
  }

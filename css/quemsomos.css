@@ -112,6 +112,10 @@ body{
         border: 1px solid white;
     }
 
+    .botão-hamburguer{
+        display: none;
+    }
+
     @media screen and (max-width: 940px){
         body{
          max-width: 940px;
