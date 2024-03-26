@@ -445,4 +445,9 @@ border: 2px solid white;
     }
 
     /*FIM DO BOTÃO HAMBURGUER*/
+
+    .ft-direitos{
+        display: none;
+        
+    }
 }

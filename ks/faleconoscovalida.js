@@ -55,7 +55,7 @@ form.addEventListener("submit", (event) => {
 
 
     // Se todos os campos estiverem preenchidos corretamente envie o arquivo.
-    form.submit(function enviararquivo(){
+    form.submit(function enviararquivo(oneclik){
         nomeInput.value;
         telefoneInput.value;
         localInput.value;

@@ -13,6 +13,3 @@ o trabalho ainda não estar terminado.
 
 Realizei:
 
-Hearde - ok
-main - ok
-estou trabalhando em alguns estilos e footer.
