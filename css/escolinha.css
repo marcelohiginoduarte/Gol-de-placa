@@ -191,19 +191,14 @@ body{
 }
 
 @media screen and (max-width: 940px){
-    body{
-     max-width: 940px;
-    }
+
+    mani{
+        min-width: 320px;
+        max-width: 700px;
+        margin: auto;
+       }
     
      /*Cabeçalho*/
- 
-     /*Primeira parte com o video*/
-     .t1{
-         flex-direction: column;
- 
-     }
- 
- 
      .t12{
          display: contents;
          flex-direction: initial;
@@ -233,12 +228,6 @@ body{
  
      .ft-direitos{
          display: block;
-     }
-     .primeiro-container video {
-         width: 50vh;
-         height: 50em;
-         object-fit: cover;
- 
      }
  
      .endress{
@@ -274,7 +263,7 @@ body{
         z-index: 999;
         width: 35px;
         height: 5px;
-        left: 430px;
+        left: 380px;
     }
 
 
@@ -295,18 +284,18 @@ body{
         z-index: 1000;
         width: 35px;
         height: 35px;
-        left: 430px;
+        left: 380px;
         opacity: 0;
         cursor: pointer;
     }
-
+/*Cor dos botão Hmeburguer*/
     .nav .botão-hamburguer:checked~ ul{
         /*background-color: red;*/
-        color: #000;
+        color: #FFFFFF;
     }
 
     .nav .botão-hamburguer:checked ~ .menu-lines span {
-        background-color: #232323;
+        background-color: #FFFFFF;
     }
 
     .nav .botão-hamburguer:checked ~ .menu-lines span:nth-child(1){
@@ -323,19 +312,22 @@ body{
         transform: rotate(-45deg) scaleX(1.25);
     }
 
+    /*Barra de navegação do menu habmburguer*/
     .nav ul {
-        position: absolute;
+        position: relative;
         flex-direction: column;
         z-index: 998;
-        left: 330;
+        left: 230;
         top: 0;
         width: 300px;
-        height: calc(100vh - 100px);
+        height: calc(50vh - 100px);
         padding-top: 100px;
         background-color: #FFFFFF;
         color: #232323;
         display: none;
         transition: all ease-out 3s;
+        border-radius: 10px;
+        opacity: 5;
     }
 
     .nav .cabeçalho li {

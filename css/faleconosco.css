@@ -182,6 +182,12 @@ body{
      max-width: 940px;
     
     }
+    mani{
+        min-width: 320px;
+        max-width: 800px;
+        margin: auto;
+       }
+    
     
      /*Cabeçalho*/
  
@@ -262,7 +268,7 @@ body{
         z-index: 999;
         width: 35px;
         height: 5px;
-        left: 430px;
+        left: 380px;
     }
 
 
@@ -283,7 +289,7 @@ body{
         z-index: 1000;
         width: 35px;
         height: 35px;
-        left: 430px;
+        left: 380px;
         opacity: 0;
         cursor: pointer;
     }
@@ -311,19 +317,22 @@ body{
         transform: rotate(-45deg) scaleX(1.25);
     }
 
+    /*Barra de navegação do menu habmburguer*/
     .nav ul {
-        position: absolute;
+        position: relative;
         flex-direction: column;
         z-index: 998;
-        left: 330;
+        left: 230;
         top: 0;
         width: 300px;
-        height: calc(100vh - 100px);
+        height: calc(50vh - 100px);
         padding-top: 100px;
         background-color: #FFFFFF;
         color: #232323;
         display: none;
         transition: all ease-out 3s;
+        border-radius: 10px;
+        opacity: 5;
     }
 
     .nav .cabeçalho li {
